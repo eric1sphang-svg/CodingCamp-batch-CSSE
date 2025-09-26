@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="navBar">
+        <div id="logo">
+            <img id="apple" src="./logo.png" alt="logo">
+        </div>
+        <div class="contents">
+            <table>
+                <th class="navButton" onclick= changeToAbout()>About Us</th>
+                <th class="navButton" onclick= changeToPackage()>Our Package</th>
+                <th class="navButton" onclick= changeToCall()>Call us</th>
+            </table>
+        </div>
+    </div>
+    <hr style="margin: 0; height: 1px; background-color: black;">
+
+    <div class="body">
+        <div>
+            <h1>Form Belajar</h1>
+            <p>ini adalah website latihan pertama</p>
+            <form action="/script.js">
+                <div style="margin: 0; display: inline-block; justify-content: center;">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" style="justify-self: end;">
+                    <br><br>
+                    <label for="tLahir">Tanggal Lahir</label>
+                    <input type="text" id="tLahir" name="tLahir">
+                    <br><br>
+                    <label for="jKelamin">Jenis Kelamin:</label>
+                    <input type="radio" id="jKelamin" name="jKelamin">Laki-Laki
+                    <input type="radio" id="jKelamin" name="jKelamin">Perempuan
+                    <br><br>
+                    <label for="pesan">Pesan:</label>
+                    <input type="text" id="pesan" name="pesan">
+                    <br><br>
+                    <input type="button" id="sButton" name="sButton" style="width: 50%;">
+                </div>
+                
+            </form>
+        </div>
+
+        <div style="display: flex;">
+
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <th>Ada Lovelace</th>
+                    <th>December 10, 1815</th>
+                    <th>Perempuan</th>
+                    <th>Belajar buat website</th>
+                    <th>
+                        <a href="">Klik Disini</a>
+                    </th>
+                    <th>
+                        <img src="trash.png" alt="Delete">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Ada Lovelace</th>
+                    <th>December 10, 1815</th>
+                    <th>Perempuan</th>
+                    <th>Belajar buat website</th>
+                    <th>
+                        <a href="">Klik Disini</a>
+                    </th>
+                    <th>
+                        <img src="trash.png" alt="Delete">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Ada Lovelace</th>
+                    <th>December 10, 1815</th>
+                    <th>Perempuan</th>
+                    <th>Belajar buat website</th>
+                    <th>
+                        <a href="">Klik Disini</a>
+                    </th>
+                    <th>
+                        <img src="trash.png" alt="Delete">
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

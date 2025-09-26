@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navBar">
+        <div id="logo">
+            <img id="apple" src="./logo.png" alt="logo">
+        </div>
+        <div class="contents">
+            <table>
+                <th class="navButton" onclick= changeToAbout()>About Us</th>
+                <th class="navButton" onclick= changeToPackage()>Our Package</th>
+                <th class="navButton" onclick= changeToCall()>Call us</th>
+            </table>
+        </div>
+    </div>
+    <hr style="margin: 0; height: 1px; background-color: black;">
+
+    <div style="padding: 0% 10%;">
+        <h1 style="margin-bottom: 5%; text-align: center; font-weight: bold; font-size: 500%;">WanderSphere Travel</h1>
+        <h3 style="text-align: center; font-weight: lighter; color: gray; font-size: 150%; font-style: italic; padding-bottom: 3%;">Every journey begins with wonder. Start yours with WanderSphere Travel!</h3>
+
+        <div style="display: flex;">
+            <div style="margin: 0; ">
+                <img width="100%" src="https://images.photowall.com/products/72354/window-bay-view.jpg?h=699&q=85" alt="image">
+                <p style="padding-bottom: 20px; font-size: 120%; text-align: center; font-weight: lighter; color: gray; margin-top: 3%;">"Liburan jadi menyenangkan bersama <br> Travel Agentku"</p>
+                <div style="display: flex; justify-content: center;">
+                    <img style="float: inline-start;" width="10%" height="10%" src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small_2x/user-icon-on-transparent-background-free-png.png" alt="profile">
+                    <p style="font-weight: bold; font-size: 120%;">Florence Hughes <br> <span style="font-style: italic; font-weight: lighter;">Ibu rumah tangga, 28</p>
+                </div>
+            </div>
+
+            <div style="width: 3%;"></div>
+
+            <div style="width:40%; background-color: lightgrey; border: none; border-radius: 5px; padding: 4%;">
+                <h1 style="text-align: center; font-weight: bold;">Contact Us</h1>
+                <br>
+                <p style="font-size: 110%; margin-bottom: 10%;">Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                <br>
+                <form action="script.js">
+                    <label for="name">Your Name:</label>
+                    <br>
+                    <input style="width: 100%; padding: 16px 0; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10%;" type="text">
+                    <br>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input style="width: 100%; padding: 16px 0; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10%;" type="text">
+                    <br>
+                    <br>
+                    <label for="interest">What are you interested in?</label>
+                    <br>
+                    <select id="interest" name="interest" style="width: 100%; padding: 16px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10%;">
+                        <option value="" disabled selected>Select option</option>
+                        <option value="tech">Technology</option>
+                        <option value="science">Science</option>
+                        <option value="art">Art</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input onclick=changeToCall() id="sendButton" type="button" value="Send" class="callButton" style="width: 100%; border: none; border-radius: 5px; padding: 16px;">
+                </form>
+            </div>
+        </div>
+        <hr style="margin: 4% 0; height: 1px; background-color: black;">
+
+        <div>
+            <h1 style="text-align: center; font-weight: bold; font-size: 500%;">BENEFITS</h1>
+        </div>
+
+        <div style="padding: 5%;">
+            <p class="benefit">Stress-Free Planning. Enjoy a hassle-free journey with expertly curated itineraries, <br>so you can focus on creating memories instead of managing logistics.</p>
+            <p class="benefit">Exclusive Deals & Savings. Get access to more special discounts, <br>bundled packages, and insider offers that make every trip more affordable.</p>
+            <p class="benefit">24/7 Travel Support. Travel with confidence knowing our dedicated support team <br>is available around the clock to assist you anytime, anywhere.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

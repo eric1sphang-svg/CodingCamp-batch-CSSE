@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+
+/* navbar contents */
+
+.navBar{
+    background-color: white;
+    display: flex;
+    padding: 2% 0%;
+    overflow: hidden;
+    /* position: fixed; */
+}
+
+#logo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#apple{
+    margin: auto;
+    width: 15%;
+    height: auto;
+    padding-right: 30%;
+}
+
+.contents{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+}
+
+.navButton:hover{
+    background-color: grey;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: separate;
+    border-radius: 5px;
+    margin-right: 20%;
+}
+
+th{
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border-right: 2px solid;
+}
+
+th:last-child{
+    border-right: none;
+}
+
+/* body contents */
+div.body{
+
+    padding: 5% 10%;
+    display: flex;
+}
+
+h1{
+    font-weight: 3;
+    margin-bottom: 1%;
+}
+
+p{
+    margin-top: 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+.benefit{
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 4px;
+    padding: 3%;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+
+.gridItem{
+    display: flex;           /* make children go side by side */
+    align-items: center;
+    padding: 8px;
+}
+
+.lightbulbs{
+    width: 20%;
+    height: auto;
+    /* float: left; */
+}
+
+.descTrav{
+    padding-left: 5%;
+}
+
+.callButton:hover{
+    background-color: gray;    
+}
